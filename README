@@ -1,0 +1,13 @@
+S3Attachment
+============
+
+Module to store file attachments on S3.
+To use it, simply install this plugin and add theses keys in your config/settings.yml file:
+
+  file_attachment_storage: s3
+  s3_local_dir: "system/uploads"
+  aws_access_key_id: "YOURKEY"
+  aws_secret_access_key: "YOURSECRET"
+
+
+Copyright (c) 2009 Raphaël Bauduin, released under the AGPL v3 license

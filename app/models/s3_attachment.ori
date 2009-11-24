@@ -1,0 +1,14 @@
+## We define these contants in the model to  minizie the change 
+
+# *Description*
+#     Contains the S3 Attachment. Stored in the +detail_value+ table.
+#     See +DetailValue+ for details.
+#     
+# *Relationships*
+#     * belongs_to :instance
+#     * belongs_to :detail   
+# 
+require 's3_attachment_module.rb'
+class S3Attachment < FileAttachment
+  include FileAttachmentModule::S3Storage
+end
